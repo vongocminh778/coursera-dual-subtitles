@@ -6,6 +6,7 @@ Enable Chinese and English subtitles for Coursera course videos.
   - [Usage](#usage)
 
 ## Screenshots
+![](https://github.com/nullcoke/coursera-subtitle-translation/assets/78184805/db87893f-a1e6-4b90-aed9-ea026b401952)
 
 ## Usage
 
