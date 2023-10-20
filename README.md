@@ -1,14 +1,15 @@
 # Coursera Subtitle Translation
 
-开启 Coursera 课程视频的中英文双语字幕
+Enable Chinese and English subtitles for Coursera course videos.
 
-* 如果课程同时存在中英文字幕，直接打开
-* 如果课程没有中文字幕，自动翻译英文字幕
+  - [Screenshots](#screenshots)
+  - [Usage](#usage)
 
-## 安装
+## Screenshots
 
-下载项目，Chrome 打开扩展程序，加载已解压的扩展程序（需要打开开发者模式）
+## Usage
 
-## 使用
-
-在课程视频页面点击扩展图标即可
+1. Clone this project or download it from the [releases](https://github.com/nullcoke/coursera-subtitle-translation/releases).
+2. (Optional) Unzip it if you downloaded it from the [releases](https://github.com/nullcoke/coursera-subtitle-translation/releases).
+3. Loading unzipped extensions with Chrome, then select the unzipped folder.
+4. Just click on the extension icon while the coursera video is playing!
