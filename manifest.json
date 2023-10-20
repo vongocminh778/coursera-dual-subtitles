@@ -1,22 +1,26 @@
 {
-    "manifest_version": 2,
-    "name": "Coursera Subtitle Translation",
-    "version": "0.0.1",
-    "content_scripts": [
-        {
-            "matches": [
-                "*://www.coursera.org/*"
-            ],
-            "js": [
-                "js/content.js"
-            ]
-        }
-    ],
-    "browser_action": {},
-    "background": {
-        "scripts": [
-            "js/background.js"
-        ],
-        "persistent": false
+  "manifest_version": 3,
+  "name": "Coursera Subtitle Translation",
+  "version": "0.0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {},
+  "icons": {
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.coursera.org/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
     }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  }
 }
