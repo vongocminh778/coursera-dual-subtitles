@@ -1,3 +1,5 @@
+[Dualsub](https://www.dualsub.xyz) is a better solution.
+
 # Coursera Dual Subtitles
 
 Enable Chinese and English subtitles for Coursera course videos.
