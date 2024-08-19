@@ -1,19 +1,19 @@
 async function openBilingual() {
   let tracks = document.getElementsByTagName('track')
   let en
-  let zh
+  let vi
   if (tracks.length) {
     for (let i = 0; i < tracks.length; i++) {
       if (tracks[i].srclang === 'en') {
         en = tracks[i]
-      } else if (tracks[i].srclang === 'zh-CN') {
-        zh = tracks[i]
+      } else if (tracks[i].srclang === 'vi') {
+        vi = tracks[i]
       }
     }
     if (en) {
       en.track.mode = 'showing'
-      if (zh) {
-        zh.track.mode = 'showing'
+      if (vi) {
+        vi.track.mode = 'showing'
       } else {
         await sleep(500)
         let cues = en.track.cues
@@ -51,7 +51,7 @@ function getCuesTextList(cues) {
 
 function getTranslation(words, callback) {
   const xhr = new XMLHttpRequest()
-  let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh&dt=t&q=${encodeURI(words)}`
+  let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURI(words)}`
   xhr.open('GET', url, true)
   xhr.responseType = 'text'
   xhr.onload = function () {
