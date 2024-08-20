@@ -22,7 +22,9 @@ async function openBilingual() {
           getTranslation(cuesTextList[i][1], translatedText => {
             const translatedTextList = translatedText.split('\n\n')
             for (let j = 0; j < translatedTextList.length; j++) {
-              cues[cuesTextList[i][0] + j].text += '\n' + translatedTextList[j]
+              // Make sure English and Vietnamese subtitles are on 2 separate lines
+              cues[cuesTextList[i][0] + j].text = cues[cuesTextList[i][0] + j].text.replace(/\n/g, ' ') // Gộp thành 1 dòng tiếng Anh
+              cues[cuesTextList[i][0] + j].text += '\n' + translatedTextList[j].replace(/\n/g, ' ') // Gộp thành 1 dòng tiếng Việt
             }
           })
         }
